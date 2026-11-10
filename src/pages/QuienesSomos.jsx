@@ -1,18 +1,30 @@
+import { Container, Typography, Paper } from '@mui/material';
+
 function QuienesSomos() {
-return ( <main className="contenido"> <h1>Quiénes somos</h1> <p>
-En FreshMarket trabajamos para ofrecer productos frescos
-y de calidad a nuestros clientes. </p>
+  return (
+    <Container sx={{ mt: 5, mb: 5 }}>
+      <Paper sx={{ p: 4 }}>
+        <Typography variant="h4" fontWeight="bold" gutterBottom>
+          ¿Quiénes somos?
+        </Typography>
 
+        <Typography paragraph>
+          Somos FreshMarket, un supermercado comprometido con ofrecer
+          productos de calidad y una experiencia de compra sencilla.
+        </Typography>
 
-  <h2>Nuestra misión</h2>
-  <p>Ofrecer productos de calidad a precios accesibles.</p>
+        <Typography paragraph>
+          Nuestra plataforma permite consultar productos, revisar su
+          disponibilidad y agregarlos a un carrito de compras.
+        </Typography>
 
-  <h2>Nuestra visión</h2>
-  <p>Ser el supermercado de confianza de nuestras comunidades.</p>
-</main>
-
-
-);
+        <Typography>
+          Nuestro objetivo es facilitar la administración de productos
+          y mejorar la experiencia de nuestros clientes.
+        </Typography>
+      </Paper>
+    </Container>
+  );
 }
 
 export default QuienesSomos;
